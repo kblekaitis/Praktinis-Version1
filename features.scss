@@ -1,0 +1,220 @@
+.features {
+    max-width: 100%;
+    height: 639px;
+    background-image: url(/app/img/features-city.png);
+    position: relative;
+    overflow: hidden;
+}
+
+.features-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.63);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    flex-grow: 1
+}
+
+.features-tab1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    flex-grow: 1;
+    position: absolute;
+    right: 35%;
+    padding-left: 20px;
+}
+
+.features-tab1 h1 {
+    font-size: 36px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.features-tab1 p {
+    max-width: 80%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.features-divider {
+    height: 2px;
+    width: 84px;
+    background: white;
+    margin-bottom: 20px;
+    position: relative;
+    right: 10%;
+}
+
+#features-cheshire {
+    width: 240px;
+    height: 100px;
+    position: relative;
+    right: 10%;
+    margin-bottom: 20px;
+}
+
+.features-tab1 button {
+    height: 42px;
+    width: 135px;
+    color: white;
+    border: 2px solid white;
+    background: rgba(0,0,0,0.0);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    transition: 0.6s ease-out;
+    cursor: pointer;
+}
+
+.features-tab1 button:hover {
+    background: rgb(30, 6, 87);
+    transform: scale(1.5) translateX(20px);
+    opacity: 1;
+}
+
+.features-tab2 {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    height: 425px;
+    width: 360px;
+    position: absolute;
+    right: 5%
+}
+
+.features-tab2 h1 {
+    font-size: 20px;
+    width: 260px;
+    height: 24px;
+    text-align: center;
+    margin: 20px;
+    margin-left: 50px
+}
+
+.features-tab2 h3 {
+    font-size: 16px;
+    margin: 20px;
+    margin-left: 40px;
+}
+
+.features-tab2 h1 span {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #E27866;
+}
+
+.features-inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.features-inputs-container h2 {
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.features-inputs {
+    width: 260px;
+    border: none;
+    border-bottom: solid 1px #D8D8D8;
+    margin: 0 50px 0 50px;
+    margin-bottom: 30px;
+    text-indent: 10px;
+}
+
+.features-inputs::placeholder {
+    color: rgba(216, 216, 216, 0.9);
+}
+
+.features-tab1 img {
+    height: 2px;
+    width: 84px;
+}
+
+.features-header {
+    width: 360px;
+    height: 57px;
+    background: #F5F5F5;
+}
+
+.features-buttons {
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.features-button {
+    margin-right: 10px;
+    appearance: none;
+    width: 13px;
+    height: 13px;
+    border: 1px solid #41D395;
+    margin: 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.yearly {
+    margin-left: 20px;
+    position: absolute;
+    left: 30%
+}
+
+.yearly-label {
+    position: absolute;
+    left: 42%
+}
+
+.features-labels {
+    position: absolute;
+    bottom: 27%
+}
+
+.features-button:before {
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 40%;
+    width: 0%;
+    height: 0%;
+    background: #41D395;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.features-button:checked:before {
+    top: 14%;
+    left: 14%;
+    width: 70%;
+    height: 70%;
+}
+
+.features-footer {
+    width: 360px;
+    height: 57px;
+    background: #41D395;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0.1%;
+    transition: 0.6s ease-out;
+}
+
+.features-footer:hover {
+    background: black;
+    transform: scale(1.2);
+}

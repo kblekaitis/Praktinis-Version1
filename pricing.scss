@@ -1,0 +1,36 @@
+.pricing-background {
+    height: 883px;
+    width: 100%;
+    background: #6696E2;
+}
+
+.pricing-background header {
+    text-align: center;
+}
+
+.pricing-background header {
+    padding-top: 80px;
+    color: white;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.pricing-background header h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+
+.pricing-background header img {
+    width: 64px;
+    height: 2px;
+    padding-bottom: 20px;
+    position: absolute;
+    left: 37%;
+}
+
+.pricing-background header p {
+    padding-top: 40px;
+}

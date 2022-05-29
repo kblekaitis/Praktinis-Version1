@@ -1,0 +1,255 @@
+
+
+@media (max-width:1600px) {
+    .tabs-buttons {
+        right: 90%;
+    }
+
+    .tabs-text-column {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        position: absolute;
+        left: 12%;
+        padding-right: 20px
+    }
+}
+
+/* // 1150PX */
+@media (max-width:1150px) {
+    .features2-icon {
+        position: absolute;
+        left: 0.25%;
+        top: 40%;
+        padding-right: 40px;
+        margin-left: 15px;
+    }
+
+    .customers p {
+        padding-right: 1px;
+        padding-left: 2px;
+    }
+
+    .footer-icons img {
+        padding-right: 20px;
+    }
+
+    .customers-flex-column {
+        padding-left: 10px;
+    }
+
+    .contact-form {
+        left: 28%
+    }
+
+    .img-socials {
+        right: 8%;
+    }
+
+    .img-socials a img {
+        margin-right: 40px;
+    }
+
+    /* // PRICING */
+    .name img {
+        left: 34%;
+    }
+
+    .professional {
+        max-width: 30%
+    }
+
+    .pricing-background header {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+}
+
+/* // 840PX +++++++++++++++++++++++++++++++++++++++++++++ */
+@media (max-width:840px) {
+
+    /* // FEATURES */
+    .features {
+        height: 900px;
+        background-repeat: cover;
+    }
+
+    .features-tab1 {
+        justify-content: center;
+        align-items: center;
+        right: 8%;
+        padding-left: 150px;
+        top: 2%;
+    }
+
+    .features-tab2 {
+        height: 425px;
+        width: 360px;
+        right: 13%;
+        bottom: 6%;
+    }
+
+    /* // SOCIALS */
+    .socials {
+        max-width: 100%;
+        height: 210px;
+        background-color: white;
+        display: flex;
+    }
+
+    .flex-socials {
+        text-align: center;
+    }
+
+    .img-socials {
+        justify-content: center;
+        right: 5%;
+        margin-top: 120px;
+    }
+
+    .img-socials a img {
+        margin-right: 60px;
+        transition: 0.2s ease-out;
+    }
+/* 
+    // FEATURES2 */
+    .features2 {
+        height: 480px;
+        max-width: 100%;
+        color: white;
+        background: black;
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .features2-icon {
+        display: none;
+    }
+
+    .features2-column {
+        right: 32%;
+    }
+
+    .features2-column h2,
+    p {
+        text-align: center;
+    }
+
+    #features2-title {
+        width: 500px;
+        text-align: center;
+    }
+
+    #features2-divider {
+        left: 40%;
+    }
+
+    /* // PROCESS */
+    .process {
+        height: 540px;
+    }
+
+    .name {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .process-elements {
+        margin-top: -40px;
+    }
+
+    /* // PRICING */
+    .pricing-background {
+        height: 1700px;
+    }
+
+    .pricing-elements {
+        flex-direction: column;
+        left: -10%
+    }
+
+    .pricing-background header {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .name img {
+        left: 34%;
+    }
+
+    .pricing-top {
+        width: 160%
+    }
+
+    .pricing-bottom {
+        width: 160%;
+    }
+
+    #our_most {
+        width: 160%;
+    }
+
+    /* // CONTACT US */
+    .contact {
+        height: 530px;
+    }
+
+    .contact h1 {
+        padding-top: 20px
+    }
+
+    .contact-form {
+        left: 10%;
+    }
+
+    /* // FOOTER */
+    .footer {
+        height: 180px;
+    }
+
+    .footer-icons {
+        width: 90%;
+        left: 4%;
+        padding-top: 40px
+    }
+
+    #footer-copyright {
+        margin-top: 101.5px;
+        margin-right: 80px;
+        font-size: 20px
+    }
+
+    .footer div img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+/* // 700PX */
+
+@media (max-width:700px) {
+    .header img {
+        display: none;
+    }
+
+    .header nav {
+        left: 2%;
+        font-size: 18px;
+    }
+
+    .header nav p {
+        margin-right: 5px;
+    }
+
+    .header nav p:hover {
+        padding-bottom: 20px;
+        border-bottom: #E27866 3px solid;
+        opacity: 1;
+    }
+
+    .features-overlay {
+        flex-direction: column;
+    }
+}
