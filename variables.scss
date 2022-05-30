@@ -1,3 +1,16 @@
+// MIXIN + INCLUDE
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// KINTAMIEJI
 $orange: #E27866;
 $green: #41D395;
 $blue: #6696E2;
@@ -11,3 +24,5 @@ $pricing-currency: '$';
 $customers-profession: #86878B;
 $contact-color: white;
 $footer-filter: invert(35%) sepia(26%) saturate(1076%) hue-rotate(321deg) brightness(92%) contrast(85%);
+$scroll-bar: black;
+$scroll-thumb: #6696E2;

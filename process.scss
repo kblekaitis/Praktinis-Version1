@@ -1,63 +1,118 @@
+// PROCESS
+
 .process {
     height: 592px;
+    p {
+            font-size: 14px;
+        }
+    .process-elements {
+            margin-top: 40px;
+            .process-columns {
+                    margin-bottom: 30px;
+                }
+            .name {
+                    text-align: center;
+                    margin-bottom: 40px;
+                    img {
+                            width: 64px;
+                            height: 2px;
+                            padding-bottom: 20px;
+                            position: absolute;
+                            left: 37%;
+                        }
+                    p {
+                            padding-bottom: 40px;
+                            padding-top: 40px;
+                        }
+                    h1 {
+                            text-transform: uppercase;
+                            font-size: 36px;
+                            padding-bottom: 40px;
+                            padding-top: 80px;
+                        }
+                }
+            .process-row {
+                    display: flex;
+                    justify-content: space-around;
+                    
+                    div {
+                            @include flex-column;
+                            width: 280px;
+                            text-align: center;
+                            // display:flex;
+                            // flex-direction:column;
+                            justify-content: space-between;
+                            align-items: center;
+                            img {
+                                    filter: $process-filter;
+                                    width: 25px;
+                                    height: 25px;
+                                    border: $process-border;
+                                    border-radius: 50px;
+                                    padding: 10px;
+                                }
+                        }
+                }
+        }
 }
 
-.process-elements {
-    margin-top: 40px;
-}
+// .process-elements {
+//     margin-top: 40px;
+// }
 
-.process-row {
-    display: flex;
-    justify-content: space-around;
-}
+// .process-row {
+//     display: flex;
+//     justify-content: space-around;
+// }
 
-.process p {
-    font-size: 14px;
-}
+// .process p {
+//     font-size: 14px;
+// }
 
-.process-row div {
-    width: 280px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+// .process-row div {
+//     @include flex-column;
+//     width: 280px;
+//     text-align: center;
+//     // display:flex;
+//     // flex-direction:column;
+//     justify-content: space-between;
+//     align-items: center;
+// }
 
-.process .process-row div img {
-    filter: invert(57%) sepia(73%) saturate(743%) hue-rotate(319deg) brightness(97%) contrast(82%);
-    width: 25px;
-    height: 25px;
-    border: #E27866 2px solid;
-    border-radius: 50px;
-    padding: 10px;
-}
+// .process .process-row div img {
+//     filter: $process-filter;
+//     width: 25px;
+//     height: 25px;
+//     border: $process-border;
+//     border-radius: 50px;
+//     padding: 10px;
+// }
 
-.name {
-    text-align: center;
-    margin-bottom: 40px;
-}
+// .name {
+//     text-align: center;
+//     margin-bottom: 40px;
+// }
 
-.name h1 {
-    text-transform: uppercase;
-    font-size: 36px;
-    padding-bottom: 40px;
-    padding-top: 80px;
-}
+// .name h1 {
+//     text-transform: uppercase;
+//     font-size: 36px;
+//     padding-bottom: 40px;
+//     padding-top: 80px;
+// }
 
-.name p {
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
+// .name p {
+//     padding-bottom: 40px;
+//     padding-top: 40px;
+// }
 
-.name img {
-    width: 64px;
-    height: 2px;
-    padding-bottom: 20px;
-    position: absolute;
-    left: 37%;
-}
+// .name img {
+//     width: 64px;
+//     height: 2px;
+//     padding-bottom: 20px;
+//     position: absolute;
+//     left: 37%;
+// }
 
-.process-columns {
-    margin-bottom: 30px;
-}
+// .process-columns {
+//     margin-bottom: 30px;
+// }

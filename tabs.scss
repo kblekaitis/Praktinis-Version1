@@ -1,130 +1,114 @@
+// TABS
+
 .tabs {
     height: 595px;
     max-width: 100%;
-    background-image: url("/app/img/tabs-background.png");
+    background-image: url("../img/tabs-background.png");
     background-size: cover;
-}
 
-.tabs-grid {
-    display: grid;
-    height: 400px;
-    width: 1000px;
-}
+    .tabs-grid {
+            display: grid;
+            height: 400px;
+            width: 1000px;
+            .tabs-buttons {
+                    @include flex-column;
+                    position: absolute;
+                    right: 80%;
+                    .tabs-apply,
+                        .tabs-receive {
+                            margin-top: 10px;
+                        }
+                    .tabs-rotate {
+                            height: 100px;
+                            width: 100px;
+                            background: #A37169;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            color: white;
+                            font-weight: 600;
+                            margin-top: 120px;
+                            margin-left: 190px;
+                            cursor: pointer;
+                            transition: 0.5s ease-out;
 
-.tabs-img1,
-.tabs-img2 {
-    width: 168px;
-    height: 168px;
-}
-
-.tabs-img3 {
-    height: 178px;
-    width: 362px;
-}
-
-.tabs-text-column {
-    display: flex;
-    flex-direction: column;
-    margin-top: 120px;
-    position: absolute;
-    left: 25%;
-    padding-right: 20px
-}
-
-.tabs-text-column h1 {
-    margin-bottom: 40px;
-}
-
-.tabs-buttons {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 80%;
-}
-
-.tabs-register,
-.tabs-apply,
-.tabs-receive {
-    height: 100px;
-    width: 100px;
-    background: #E27866;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 600;
-    margin-top: 120px;
-    margin-left: 190px;
-    cursor: pointer;
-}
-
-.tabs-apply,
-.tabs-receive {
-    background: #A37169;
-}
-
-.tabs-rotate div {
-    transform: rotate(-45deg);
-    margin-top: 40px;
-}
-
-.tabs-apply,
-.tabs-receive {
-    margin-top: 10px;
-}
-
-.tabs-grid h1 {
-    grid-area: t;
-    font-size: 36px;
-    color: white;
-    font-weight: 600;
-    width: 509px;
-    height: 124px;
-}
-
-.tabs-grid p {
-    grid-area: p;
-    font-size: 14px;
-    width: 517px;
-    height: 138px;
-    color: white;
-}
-
-.tabs-img1 img {
-    width: 168px;
-    height: 168px;
-}
-
-.tabs-img2 img {
-    width: 168px;
-    height: 168px;
-    margin-left: 30px
-}
-
-.tabs-img3 img {
-    width: 350px;
-    height: 177.44px;
-}
-
-.tabs-images {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 120px;
-    right: 10%;
-}
-
-.tabs-images-row {
-    display: flex;
-    margin-left: 20px
-}
-
-
-#tabs-text-1 {
-    height: 100px;
-}
-
-#tabs-text-2 {
-    position: absolute
+                        div {
+                                transform: rotate(-45deg);
+                                margin-top: 40px;
+                            }
+                            
+                        }
+                        .tabs-rotate:hover {
+                            background: $orange;
+                        }
+            }
+            .tabs-text-column {
+                    @include flex-column;
+                    margin-top: 120px;
+                    position: absolute;
+                    left: 25%;
+                    padding-right: 20px;
+                    #tabs-text-1 {
+                            height: 100px;
+                        }
+                    
+                        #tabs-text-2 {
+                            position: absolute
+                        }
+                    h1 {
+                            margin-bottom: 40px;
+                        }
+                }
+            .tabs-images {
+                @include flex-column;
+                position: absolute;
+                margin-top: 120px;
+                right: 10%;
+                .tabs-img1 img {
+                        width: 168px;
+                        height: 168px;
+                    }
+                
+                    .tabs-img2 img {
+                        width: 168px;
+                        height: 168px;
+                        margin-left: 30px
+                    }
+                
+                    .tabs-img3 img {
+                        width: 350px;
+                        height: 177.44px;
+                    }
+                    .tabs-images-row {
+                            display: flex;
+                            margin-left: 20px;
+                        .tabs-img1,
+                        .tabs-img2 {
+                                width: 168px;
+                                height: 168px;
+                            }
+                        }
+                    .tabs-img3 {
+                        height: 178px;
+                        width: 362px;
+                    }
+                }
+            h1 {
+                    grid-area: t;
+                    font-size: 36px;
+                    color: white;
+                    font-weight: 600;
+                    width: 509px;
+                    height: 124px;
+                }
+            
+              p {
+                    grid-area: p;
+                    font-size: 14px;
+                    width: 517px;
+                    height: 138px;
+                    color: white;
+                }
+        }
 }

@@ -1,3 +1,5 @@
+// FEATURES
+
 .features2 {
     height: 596px;
     max-width: 100%;
@@ -5,99 +7,85 @@
     background: black;
     display: flex;
     flex-grow: 1;
-}
-
-.features2 p {
-    font-size: 14px;
-}
-
-.features2 h2 {
-    font-size: 30px;
-    margin-bottom: 60px;
-}
-
-.features2-icon {
-    width: 360px;
-    height: 160px;
-    margin-right:2%;
-    margin-left:5%;
-    position: absolute;
-    left: 10%;
-    top: 40%;
-    padding-right: 40px;
-    float: left;
-}
-
-.features2-elements {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-grow: 1;
-    position: relative;
-    margin-bottom: 100px
-}
-
-.features2-column {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 314px;
-    height: 80px;
-    right: 16.7%;
-    margin-bottom: 300px;
-    ;
-    flex-grow: 1;
-}
-
-#features2-big {
-    width: 451px;
-    height: 58px;
-}
-
-.features2-column p:nth-of-type(1) {
-    padding-bottom: 30px;
-}
-
-.features2 .features2-icons {
-    background: #E27866 0% 0% no-repeat padding-box;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding: 8px;
-    color: white;
-    border: 1px solid #E27866;
-    margin-right: 15px;
-}
-
-#features2-divider {
-    width: 200px;
-    height: 2px;
-    margin-bottom: 30px;
-    position: absolute;
-    left: -10%;
-    padding-top: 100px
-}
-
-.title {
-    width: 400px;
-    display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
-    padding-right: 60px;
-    flex-grow: 1;
-}
-
-.title1-text p {
-    width: 394px;
-    height: 38px;
-}
-
-.title2-text p {
-    width: 394px;
-    height: 58px;
-}
-
-.title h3 {
-    font-size: 14px;
-    margin-bottom: 10px
+    .features2-elements {
+            @include center;
+            flex-grow: 1;
+            position: relative;
+            margin-bottom: 100px;
+            .features2-column {
+                    @include flex-column;
+                    position: absolute;
+                    width: 314px;
+                    height: 80px;
+                    right: 16.7%;
+                    margin-bottom: 300px;
+                    ;
+                    flex-grow: 1;
+                    .title1-text p {
+                            width: 394px;
+                            height: 38px;
+                        }
+                    
+                        .title2-text p {
+                            width: 394px;
+                            height: 58px;
+                        }
+                    
+                        .title h3 {
+                            font-size: 14px;
+                            margin-bottom: 10px
+                        }
+                    .title {
+                            width: 400px;
+                            display: flex;
+                            margin-bottom: 20px;
+                            justify-content: center;
+                            padding-right: 60px;
+                            flex-grow: 1;
+                        }
+                    #features2-divider {
+                            width: 200px;
+                            height: 2px;
+                            margin-bottom: 30px;
+                            position: absolute;
+                            left: -10%;
+                            padding-top: 100px
+                        }
+                    .features2-icons {
+                            background: $orange 0% 0% no-repeat padding-box;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                            padding: 8px;
+                            color: white;
+                            border: 1px solid $orange;
+                            margin-right: 15px;
+                        }
+                    p:nth-of-type(1) {
+                            padding-bottom: 30px;
+                        }
+                    #features2-big {
+                            width: 451px;
+                            height: 58px;
+                        }
+                    .features2-icon {
+                            width: 360px;
+                            height: 160px;
+                            position: absolute;
+                            left: 10%;
+                            top: 40%;
+                            padding-right: 40px;
+                            float: left;
+                        }
+                    
+                        h2 {
+                            font-size: 30px;
+                            margin-bottom: 60px;
+                        }
+                    
+                        p {
+                            font-size: 14px;
+                        }
+                }
+        }
 }

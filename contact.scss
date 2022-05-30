@@ -1,141 +1,121 @@
+// CONTACTS
 .contact {
     height: 573px;
     max-width: 100%;
-    background-color: #E27866;
-    color: white;
+    background-color: $orange;
+    color: $contact-color;
     text-align: center;
     position: relative;
-}
-
-.contact-form {
-    display: flex;
-    height: 314px;
-    width: 390px;
-    background: white;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 37%;
-    flex-grow: 1;
-}
-
-.contact h1 {
-    padding-top: 80px;
-    text-transform: uppercase;
-    font-size: 36px;
-    padding-bottom: 50px;
-}
-
-.contact p {
-    margin-bottom: 30px;
-}
-
-.contact-inputs {
-    width: 260px;
-    height: 19.5px;
-    border: none;
-    border-bottom: 1px solid black;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 30px;
-    text-indent: 10px;
-}
-
-.fName {
-    position: absolute;
-    top: 10%
-}
-
-.lName {
-    position: absolute;
-    top: 27%
-}
-
-.phone {
-    position: absolute;
-    top: 44%;
-}
-
-.contact-form button {
-    color: white;
-    border-radius: 5px;
-    height: 48px;
-    width: 158.12px;
-    background-color: #41D395;
-    border: none;
-    text-transform: uppercase;
-    font-size: 15px;
-    font-weight: 550;
-    letter-spacing: 1.5px;
-    cursor: pointer;
-    transition: transform 0.5s ease-out;
-}
-
-.contact-form button:hover {
-    background-color: black;
-    transform: scale(1.5);
-}
-
-
-
-.contact-form form {
-    position: relative;
-}
-
-#send-button {
-    position: absolute;
-    bottom: 10%;
-}
-
-.radio-buttons {
-    color: black;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 9px;
-    font-weight: 600;
-    position: absolute;
-    bottom: 20%;
-    left: 15%;
-}
-
-.radio-button {
-    margin-right: 10px;
-}
-
-.radio-buttons input {
-    appearance: none;
-    width: 13px;
-    height: 13px;
-    border: 1px solid #41D395;
-    margin: 10px;
-    border-radius: 50%;
-    position: relative;
-}
-
-
-.radio-buttons input:before {
-    position: absolute;
-    content: "";
-    top: 40%;
-    left: 45%;
-    width: 0%;
-    height: 0%;
-    background: #41D395;
-    border-radius: 50%;
-    transition: 0.3s;
-}
-
-.radio-buttons input:checked:before {
-    top: 14%;
-    left: 14%;
-    width: 70%;
-    height: 70%;
-    padding: 0.001em
+    p {
+            margin-bottom: 30px;
+        }
+    h1 {
+            padding-top: 80px;
+            text-transform: uppercase;
+            font-size: 36px;
+            padding-bottom: 50px;
+        }
+    .contact-form {
+            display: flex;
+            height: 314px;
+            width: 390px;
+            background: white;
+            border-radius: 4px;
+            @include flex-column;
+            @include center;
+            position: absolute;
+            left: 37%;
+            flex-grow: 1;
+            form {
+                    position: relative;
+                    .radio-buttons {
+                            color: black;
+                            margin-bottom: 40px;
+                            @include center;
+                            text-transform: uppercase;
+                            font-size: 9px;
+                            font-weight: 600;
+                            position: absolute;
+                            bottom: 20%;
+                            left: 15%;
+                            .radio-button {
+                                    margin-right: 10px;
+                                }
+                            input {
+                                    appearance: none;
+                                    width: 13px;
+                                    height: 13px;
+                                    border: 1px solid $green;
+                                    margin: 10px;
+                                    border-radius: 50%;
+                                    position: relative;
+                            }
+                            input:before {
+                                    position: absolute;
+                                    content: "";
+                                    top: 40%;
+                                    left: 45%;
+                                    width: 0%;
+                                    height: 0%;
+                                    background: $green;
+                                    border-radius: 50%;
+                                    transition: 0.3s;
+                            }
+                            input:checked:before {
+                                    top: 14%;
+                                    left: 14%;
+                                    width: 70%;
+                                    height: 70%;
+                                    padding: 0.001em
+                            }
+                        }
+                    #send-button {
+                            position: absolute;
+                            bottom: 10%;
+                        }
+        }
+            button {
+                    color: white;
+                    border-radius: 5px;
+                    height: 48px;
+                    width: 158.12px;
+                    background-color: $green;
+                    border: none;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: 550;
+                    letter-spacing: 1.5px;
+                    cursor: pointer;
+                    transition: transform 0.5s ease-out;
+            }
+            button:hover {
+                    background-color: black;
+                    transform: scale(1.5);
+            }
+            .fName {
+                    position: absolute;
+                    top: 10%
+            }
+            
+            .lName {
+                    position: absolute;
+                    top: 27%
+            }
+            
+            .phone {
+                    position: absolute;
+                    top: 44%;
+            }
+            input {
+                    width: 260px;
+                    height: 19.5px;
+                    border: none;
+                    border-bottom: 1px solid black;
+                    font-size: 12px;
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                    margin-bottom: 30px;
+                    text-indent: 10px;
+                }
+        }
 }
